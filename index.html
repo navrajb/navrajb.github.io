@@ -1,0 +1,137 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navraj Bains</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<div class = "background-image2">
+<body>
+    <div id ="header2">
+        <div class = "container2">
+           <nav>
+            <logo> <a href = "index.html">NAVRAJ BAINS</a> </logo>
+               <ul id = "sidemenu"> 
+                <li>  <a href = "index.html">HOME</a>  </li>
+                <li>  <a href = "index.html#about">ABOUT</a>  </li>
+                <li>  <a href = "documents/Resume.pdf" target = "_blank" rel = "noopener">RESUME</a>  </li>
+                <li>  <a href = "portfolio.html">PORTFOLIO</a>  </li>
+               </ul>
+           </nav>
+           </div>
+           <div class = "container">
+           <div class = "header-text">
+            <p> Second Year Computer Engineering Student</p>
+            <h1> Hi, I'm <span> Navraj Bains </span> </h1>
+
+
+
+           </div>
+
+
+       </div>
+    </div>
+   </div>
+<!---about section of my website--> 
+   <div id="about">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="about-col-1">
+
+            </div>
+            <div class="about-col-2">
+            <h1 class = "sub-title" > About Me</h1>   
+            
+            <p> 
+                I am an undergraduate student at the University of British Columbia in my second year of Computer Engineering.
+                My hobbies include software development, puzzles, hiking, and soccer. I am currently looking for a co-op placement for May 2023. 
+            </p>
+            <div class = "tab-titles">
+
+                <p class = "tab-links active-link" onclick = "opentab('skills')">Skills</p> 
+                <p class = "tab-links"onclick = "opentab('experience')">Experience</p> 
+
+            </div>
+
+            <div class="tab-contents active-tab" id = 'skills'>
+
+                <ul>    
+
+                    <li><span> Software </span><br> Java, C, Ros2</li>
+                    <li><span> Hardware </span><br> Arduino, Verilog, ARM v7</li>
+                    
+                </ul>
+
+
+            </div>
+
+            <div class="tab-contents" id = 'experience'>
+
+                <ul>    
+
+                    <li><span> Software Team Member </span><br> UBC Subbots</li>
+                    <li><span>  Undergraduate Teaching Assistant</span><br> UBC Department of Mathematics</li>
+                      
+                </ul>
+
+
+            </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+   </div>
+<!--Footer Section -->
+<footer>
+    <div class="footer-content">
+    <p>Feel free to contact me anytime! </p>
+    <ul class="socials">
+    <li><a href="https://www.linkedin.com/in/navrajbains/"target = "_blank" rel = "noopener"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="https://github.com/navrajb"target = "_blank" rel = "noopener"><i class="fa fa-github"></i></a></li>
+    </ul>
+    </div>
+    <div class = "footer-bottom">
+    <p>Copyright &copy;2023 Designed By <span>Navraj Bains</span> 
+    navrajb03@gmail.com</p>    
+    </div>
+    </footer>
+
+<script>  var tablinks = document.getElementsByClassName("tab-links");
+ var tabcontents = document.getElementsByClassName("tab-contents"); 
+ 
+ function opentab(tabname){
+
+    for (tablink of tablinks){
+
+        tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents){
+
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+ }
+ </script>
+ 
+</body>
+</html>

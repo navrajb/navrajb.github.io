@@ -1,0 +1,450 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+
+    background: #080808;
+    color: #fff;
+    overflow-x: hidden;
+
+}
+html{
+
+scroll-behavior:smooth;
+
+}
+.container{
+padding : 10px 10%;
+}
+.container2{
+    padding : 0px 0px 10% 0%;
+    }
+    
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(33, 32, 32, 0.87);
+    opacity: 80%;
+    width: max-width;
+    flex: 0 0 auto;
+}
+
+
+.logo{
+width: 300px;
+}
+
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 10px 60px;
+}
+
+nav logo{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 60px; 
+}
+
+nav logo a{
+    background-color: #CA4246;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-decoration: none;
+    font-size: 40px;
+    position: relative;
+
+    background-image: linear-gradient(
+        45deg,
+        #5a6784 0%,
+        #425783 33.33%, 
+        #1b4cb7 66.666%);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  
+  -webkit-text-fill-color: transparent; 
+
+  /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+}
+
+nav logo a:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+    
+
+nav ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 24px;
+font-family: 'Fuzzy Bubbles', cursive;
+position: relative;
+}
+nav ul li a::after{
+content: '';
+width: 0%; 
+height: 3px;
+background: #1b4cb7;
+position: absolute;
+left: 0;
+bottom: -6px;
+}
+
+nav ul li a:hover::after{
+    content: '';
+    width: 100%; 
+    height: 3px;
+    background: #1b4cb7;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    }
+
+
+    
+
+    .header-text{
+        margin-top: 20%;
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-size: 60px;
+        margin-top: 20px;
+
+    }
+
+    .header-text h1 span{
+       color: #1b4cb7;
+    }
+
+    /* about  */
+    #about{
+        padding: 80px 0;
+        color: #ababab;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .about-col-1{
+
+      flex-basis: 35%;
+      
+    }
+
+    .about-col-2{
+flex-basis: 60%;
+    }
+
+.sub-title{
+font-family: 'Fuzzy Bubbles', cursive;
+font-size: 60px;
+font-weight: 600;
+color: #fff; 
+}
+
+.sub-title span {
+font-family: 'Fuzzy Bubbles', cursive;
+color: #1b4cb7;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+
+    margin-right: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+
+content: '';
+width: 0;
+height: 3px;
+background: #1b4cb7;  
+position: absolute;
+left: 0;
+bottom: -8px;
+transform: 0.5s;
+}
+
+.tab-links.active-link::after{
+
+width: 50%;
+
+}
+
+.tab-contents ul li{
+
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+
+color:  #425783;
+font-size: 14px;
+
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+
+display: block;
+
+}
+/*#portfolio*/
+
+#portfolio{
+
+padding-top: 50px;
+padding-bottom: 200px;
+
+}
+.work-list{
+
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+
+.work{
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+}
+
+.work img{
+width: 100%;
+border-radius: 10px;
+display: block;
+}
+
+.layer span{
+
+    color: #425783;
+    font-size: 25px;
+
+}
+
+footer{
+
+background: black;
+
+height: auto;
+
+width: 100vw;
+font-family: "Open-Sans";
+padding-top: 40px;
+color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    }
+    .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    }
+    .socials{
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    }
+
+    .socials li{
+        margin: 0 10px;
+    }
+    .socials a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .socials a i{
+        font-size: 1.1rem;
+        transition: color .4s ease;
+    }
+
+    .socials a:hover i{
+        color: aqua;
+    }
+
+    .footer-bottom{
+
+        background: black;
+        width: 100vw;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-bottom p{
+
+        font-size: 14px;
+        word-spacing: 2px;
+    }
+
+    .footer-bottom span{
+
+        text-transform: uppercase;
+        opacity: .75;
+        color: #4a7ae3;
+        font-weight: 200;
+        
+    }
+
+
+    .background-image{
+        
+        background-attachment: fixed;
+        background-image: url('./images/portfolio_back.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 800px;
+        overflow-x: hidden;
+        padding:0%;
+
+    }
+
+    .background-image2{
+        background-attachment: fixed;
+        background-image: url('./images/home_back.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 800px;
+        overflow-x: hidden;
+        padding:0%;
+
+    }
+
+    .header-text-small{
+
+        margin-top: 20px;
+        font-size: 18px;
+
+    }
+/*CSS for small screens*/
+
+nav .fa{
+    display: none;
+}
+
+@media only screen and (max-with: 600px){
+
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .fa{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+
+        background: #1b4cb7;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    nav ul li{
+
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+
+    
+}
