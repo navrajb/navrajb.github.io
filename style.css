@@ -446,5 +446,22 @@ nav .fa{
 
     }
 
+    .sub-title{
+        font-size: 30px;
+        margin: 25px;
+        position: absolute;
+        display: flex;
+
+        }
+
+        .about-col-2{
+
+            font-size: 30px;
+            display: flex;
+            margin: 25px;
+        position: absolute;
+
+        }
+
     
 }
