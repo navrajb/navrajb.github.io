@@ -225,6 +225,7 @@ width: 50%;
 
     list-style: none;
     margin: 10px 0;
+    
 }
 
 .tab-contents ul li span{
@@ -233,6 +234,22 @@ color:  #425783;
 font-size: 14px;
 
 }
+
+.tab-contents ul li bl::before{
+
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #1b4cb7; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    list-style-Type: none;
+    padding: 0 0 4px 23px;
+    
+    }
+
+    
+.tab-contents ul li bl{
+
+    
+    }
 
 .tab-contents{
     display: none;
@@ -257,12 +274,14 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 grid-gap: 40px;
 margin-top: 50px;
+flex-wrap: wrap;
 }
 
 .work{
 border-radius: 10px;
 position: relative;
 overflow: hidden;
+max-width: 375px;
 }
 
 .work img{
@@ -270,6 +289,39 @@ width: 100%;
 border-radius: 10px;
 display: block;
 }
+.work video{
+    width: 440px;
+    max-height: 300px;
+    border-radius: 10px;
+    display: block;
+
+}
+.video-container .github-link {
+    position: absolute;
+    bottom: 60%;
+    left: 60%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .video-container:hover .github-link {
+    opacity: 1;
+  }
+
+  .video-container .github-link img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .video-container .github-link:hover img {
+    transform: scale(1.2);
+  }
 
 .layer span{
 
@@ -301,7 +353,7 @@ color: #fff;
 .footer-content h3{
     font-size: 1.8rem;
     font-weight: 400;
-    text-transform: capitalize;
+  0  text-transform: capitalize;
     line-height: 3rem;
 }
 
